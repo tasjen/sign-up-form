@@ -76,18 +76,13 @@ input {
   background-color: #fefefe;
 }
 
-input:focus-visible {
+input {
   outline-color:#467AC8;
 }
 
-#password,
-#confirm-password {
+.password-check {
   border: 3px solid red;
-}
-
-#password:focus,
-#confirm-password:focus{
-  outline: none;
+  outline: red;
 }
 
 label{
