@@ -1,6 +1,6 @@
 @font-face {
   font-family: my-font;
-  src: url("/asset/font/Norse-Bold.otf");
+  src: url("./Norse-Bold.otf");
 }
 
 :root {
@@ -17,7 +17,7 @@ body {
 
 #image-container {
   flex-shrink: 0;
-  background-image: url("/asset/images/background.jpg");
+  background-image: url("./background.jpg");
   background-size: cover;
   position: sticky;
   top: 0;
