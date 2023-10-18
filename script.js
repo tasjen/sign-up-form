@@ -5,7 +5,6 @@ const passwordWarning = document.querySelector('#password + p');
 password.classList.add('password-check');
 confirmPassword.classList.add('password-check');
 
-
 password.addEventListener('input', passwordCheck);
 confirmPassword.addEventListener('input', passwordCheck);
 

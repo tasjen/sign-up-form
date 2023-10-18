@@ -1,31 +1,33 @@
 @font-face {
   font-family: my-font;
-  src: url('/asset/font/Norse-Bold.otf');
+  src: url("/asset/font/Norse-Bold.otf");
 }
 
 :root {
   font-family: sans-serif;
   font-size: 1.25rem;
+  --red: #d52124;
+  --green: #596d48;
 }
 
 body {
   display: flex;
-  margin:0;
+  margin: 0;
 }
 
-#image-container{
+#image-container {
   flex-shrink: 0;
-  background-image: url('/asset/images/background.jpg');
+  background-image: url("/asset/images/background.jpg");
   background-size: cover;
   position: sticky;
   top: 0;
   height: 100vh;
   width: 30vw;
-  margin:0;
+  margin: 0;
 }
 
-#logo-container{
-  background-color: rgba(0,0,0,0.5);
+#logo-container {
+  background-color: rgba(0, 0, 0, 0.5);
   height: 14.5vh;
   position: relative;
   top: 22vh;
@@ -36,6 +38,12 @@ body {
 
 #logo-container > img {
   height: 80%;
+}
+
+#logo-container > p {
+  font-family: my-font;
+  font-size: 9vh;
+  color: white;
 }
 
 #image-container > #photo-credit {
@@ -52,12 +60,24 @@ body {
   color: inherit;
 }
 
+#sign-up {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9fafc;
+}
 
-#logo-container > p {
-  font-family: my-font;
-  font-size: 9vh;
-  color: white;
+#sign-up p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 3rem 3rem 2rem 3rem;
+  padding: 0;
+}
 
+#sign-up p + p {
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 h1 {
@@ -74,65 +94,37 @@ input {
   border-radius: 0.25rem;
   border: 2px solid #ddd;
   background-color: #fefefe;
-}
-
-input {
-  outline-color:#467AC8;
+  outline-color: #467ac8;
+  font-size: 1rem;
 }
 
 .password-check {
-  border: 3px solid red;
-  outline: red;
+  border: 3px solid var(--red);
+  outline: var(--red);
 }
 
-label{
+label {
   display: block;
   letter-spacing: 0.2rem;
 }
 
-
-#sign-up{
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #f9fafc;
-}
-
-#sign-up p{
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin: 3rem 3rem 2rem 3rem;
-  padding: 0;
-
-}
-
-#sign-up p + p {
-  margin-top: 0;
-  margin-bottom: 3rem;
-}
-
-#input-container{
+#input-container {
   background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 0.5rem #ccc;
 }
 
-#input-container > div {
+#input-container > #width-controller {
   display: flex;
   flex-wrap: wrap;
   width: 61rem;
-  box-shadow: inset;
 }
 
-input {
-  font-size: 1rem;
-}
-
-.each-input{
+.each-input {
   margin: 1.5rem 3rem;
   margin-bottom: 0;
 }
 
-.each-input:last-child{
+.each-input:last-child {
   margin-bottom: 3rem;
 }
 
@@ -140,7 +132,7 @@ input {
   margin: 0.2rem;
   padding: 0;
   font-size: 1rem;
-  color: red;
+  color: var(--red);
   font-weight: 100;
 }
 
@@ -149,11 +141,12 @@ button {
   margin-bottom: 0;
   font-size: 1.25rem;
   padding: 1rem 3.5rem;
-  background-color: #596d48;
+  background-color: var(--green);
   border: none;
   border-radius: 0.75rem;
   color: white;
   font-weight: 600;
+  box-shadow: 0.1rem 0.25rem 0.5rem #ccc;
 }
 
 #sign-up > #log-in {
@@ -162,7 +155,5 @@ button {
 
 #log-in > a {
   text-decoration: none;
-  color: #596d48;
+  color: var(--green);
 }
-
-
