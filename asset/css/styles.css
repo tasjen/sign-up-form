@@ -47,7 +47,7 @@ body {
   font-size: 1.6vh;
 }
 
-p > a {
+#photo-credit > p > a {
   text-decoration: underline;
   color: inherit;
 }
@@ -135,7 +135,11 @@ button {
   font-weight: 600;
 }
 
-a {
+#sign-up > #log-in {
+  font-weight: 500;
+}
+
+#log-in > a {
   text-decoration: none;
   color: #596d48;
 }
