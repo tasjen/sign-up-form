@@ -76,6 +76,20 @@ input {
   background-color: #fefefe;
 }
 
+input:focus-visible {
+  outline-color:#467AC8;
+}
+
+#password,
+#confirm-password {
+  border: 3px solid red;
+}
+
+#password:focus,
+#confirm-password:focus{
+  outline: none;
+}
+
 label{
   display: block;
   letter-spacing: 0.2rem;
@@ -114,6 +128,10 @@ label{
   box-shadow: inset;
 }
 
+input {
+  font-size: 1rem;
+}
+
 .each-input{
   margin: 1.5rem 3rem;
   margin-bottom: 0;
@@ -121,6 +139,14 @@ label{
 
 .each-input:last-child{
   margin-bottom: 3rem;
+}
+
+#password + p {
+  margin: 0.2rem;
+  padding: 0;
+  font-size: 1rem;
+  color: red;
+  font-weight: 100;
 }
 
 button {
