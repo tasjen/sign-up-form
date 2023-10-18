@@ -72,7 +72,7 @@ label{
 #input-container > div {
   display: flex;
   flex-wrap: wrap;
-  width: 80rem;
+  width: 61rem;
   box-shadow: inset;
 }
 
